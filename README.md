@@ -12,14 +12,29 @@ A practical, beginner-friendly guide to sending notifications to [ntfy](https://
 - Start here: `docs/getting-started.md`
 - Self-hosting: `docs/self-hosting.md`
 - Service integrations: `docs/services/README.md`
- - Full catalog: `docs/services/index.md`
- - Generic patterns: `docs/services/generic-integrations.md`
- - Contributing integrations: `docs/services/contributing.md`
+- Full catalog: `docs/services/index.md`
+- Generic patterns: `docs/services/generic-integrations.md`
+- Contributing integrations: `docs/services/contributing.md`
+
+## Automation policy (nightly issues)
+This repo runs a nightly GitHub-issues workflow via n8n to keep reports and simple fixes current.
+
+What it does nightly:
+- Pulls open GitHub issues for this repo
+- Writes a dated report to `docs/issue-triage/YYYY-MM-DD.md`
+- Runs `scripts/verify.sh` to validate basic repo structure
+- If verification passes, commits directly to `main`
+
+Notes:
+- All automated changes are minimal and verification-gated
+- Non-trivial fixes should still be reviewed by a human
 
 ## How this repo is organized
 - `docs/` main documentation
 - `docs/services/` per-service integration guides
+- `docs/services/catalog/` category catalogs (100+ services)
 - `docs/assets/` screenshots and diagrams
+- `scripts/` automation helpers
 
 ## Contributing
 This project is early. If you want to add a service integration guide:
