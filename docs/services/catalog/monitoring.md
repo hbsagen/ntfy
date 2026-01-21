@@ -1,0 +1,49 @@
+# Monitoring and observability
+
+Method legend: webhook, script, polling, email, ci
+
+- Alertmanager (Prometheus) — Possible: yes. Method: webhook. Quirks: JSON payload with multiple alerts; use templates or a relay to summarize. Docs: https://prometheus.io/docs/alerting/latest/alertmanager/
+- Grafana Alerting — Possible: yes. Method: webhook. Quirks: contact point + notification template; set a short message for mobile. Docs: https://grafana.com/docs/grafana/latest/alerting/
+- Zabbix — Possible: yes. Method: script/webhook media. Quirks: media type scripts must be on the server with exec permissions. Docs: https://www.zabbix.com/documentation/current/en/manual/config/notifications
+- Nagios — Possible: yes. Method: script. Quirks: runs on server host. Docs: https://www.nagios.org/documentation/
+- Icinga 2 — Possible: yes. Method: script/webhook. Quirks: custom notification command. Docs: https://icinga.com/docs/icinga-2/latest/doc/03-monitoring-basics/
+- Sensu — Possible: yes. Method: webhook handler. Quirks: handler config. Docs: https://docs.sensu.io/sensu-go/latest/handlers/
+- Datadog Monitors — Possible: yes. Method: webhook. Quirks: payload is fixed JSON; add a concise title in monitor message. Docs: https://docs.datadoghq.com/integrations/webhooks/
+- New Relic Alerts — Possible: yes. Method: webhook. Quirks: limited payload templating; use a relay if you need custom text. Docs: https://docs.newrelic.com/docs/alerts-applied-intelligence/notifications/webhook-notifications/
+- Dynatrace — Possible: yes. Method: webhook. Quirks: problem notification JSON. Docs: https://www.dynatrace.com/support/help/extend-dynatrace/notifications
+- Elastic Watcher — Possible: yes. Method: webhook. Quirks: X-Pack or Kibana alerting. Docs: https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-alerting.html
+- OpenSearch Alerting — Possible: yes. Method: webhook. Quirks: destination config. Docs: https://opensearch.org/docs/latest/observing-your-data/alerting/
+- Loki Alerting — Possible: yes. Method: webhook. Quirks: via Grafana or ruler. Docs: https://grafana.com/docs/loki/latest/alerting/
+- Mimir Alerting — Possible: yes. Method: webhook. Quirks: Alertmanager config. Docs: https://grafana.com/docs/mimir/latest/
+- VictoriaMetrics Alertmanager — Possible: yes. Method: webhook. Quirks: Alertmanager compatible. Docs: https://docs.victoriametrics.com/alertmanager/
+- InfluxDB — Possible: yes. Method: webhook/script. Quirks: tasks run inside InfluxDB. Docs: https://docs.influxdata.com/influxdb/
+- Telegraf — Possible: yes. Method: script/http output. Quirks: use exec or http output. Docs: https://github.com/influxdata/telegraf/tree/master/plugins/outputs
+- OpenTelemetry Collector — Possible: yes. Method: script. Quirks: use webhook receiver + exporter. Docs: https://opentelemetry.io/docs/collector/
+- Uptime Kuma — Possible: yes. Method: webhook. Quirks: custom JSON. Docs: https://github.com/louislam/uptime-kuma/wiki
+- Better Stack (Better Uptime) — Possible: yes. Method: webhook. Quirks: integration token. Docs: https://betterstack.com/docs/uptime/integrations/
+- Statuspage — Possible: yes. Method: webhook. Quirks: outgoing webhooks per incident. Docs: https://support.atlassian.com/statuspage/docs/webhooks/
+- Pingdom — Possible: yes. Method: webhook. Quirks: HTTPS only. Docs: https://www.pingdom.com/resources/api/
+- Updown.io — Possible: yes. Method: webhook. Quirks: fixed payload. Docs: https://updown.io/api
+- Freshping — Possible: yes. Method: webhook. Quirks: plan limits. Docs: https://www.freshworks.com/statuspage/
+- Healthchecks.io — Possible: yes. Method: webhook. Quirks: integration webhooks. Docs: https://healthchecks.io/docs/
+- Checkly — Possible: yes. Method: webhook. Quirks: alert channels. Docs: https://www.checklyhq.com/docs/alerting/
+- Cronitor — Possible: yes. Method: webhook. Quirks: use alert integrations. Docs: https://cronitor.io/docs
+- Sentry — Possible: yes. Method: webhook. Quirks: alert rules required. Docs: https://docs.sentry.io/product/alerts/
+- Honeybadger — Possible: yes. Method: webhook. Quirks: integration webhooks. Docs: https://docs.honeybadger.io/
+- Rollbar — Possible: yes. Method: webhook. Quirks: per-project webhook. Docs: https://docs.rollbar.com/docs/webhooks
+- Bugsnag — Possible: yes. Method: webhook. Quirks: integration config. Docs: https://docs.bugsnag.com/product/integrations/
+- Raygun — Possible: yes. Method: webhook. Quirks: alerting integrations. Docs: https://raygun.com/documentation/
+- AppSignal — Possible: yes. Method: webhook. Quirks: alert notifications. Docs: https://docs.appsignal.com/alerting/
+- Airbrake — Possible: yes. Method: webhook. Quirks: webhook integration. Docs: https://airbrake.io/docs/
+- Loggly — Possible: yes. Method: webhook. Quirks: alerting setup. Docs: https://www.loggly.com/docs/
+- Splunk Observability — Possible: yes. Method: webhook. Quirks: detector notifications. Docs: https://docs.splunk.com/Observability/
+- Azure Application Insights — Possible: yes. Method: webhook. Quirks: use action groups. Docs: https://learn.microsoft.com/azure/azure-monitor/app/alerts
+- CloudWatch Synthetics — Possible: yes. Method: webhook via SNS/Lambda. Quirks: needs bridge. Docs: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html
+- Heartbeat (Elastic) — Possible: yes. Method: webhook via Kibana alerting. Quirks: use Uptime monitors. Docs: https://www.elastic.co/guide/en/uptime/current/index.html
+- Datadog Synthetics — Possible: yes. Method: webhook. Quirks: alert notifications. Docs: https://docs.datadoghq.com/synthetics/
+- UptimeRobot — Possible: yes. Method: webhook. Quirks: webhooks on paid plans. Docs: https://uptimerobot.com/help/webhooks/
+- Site24x7 — Possible: yes. Method: webhook. Quirks: webhook integration. Docs: https://www.site24x7.com/help/api/
+- Opsview — Possible: yes. Method: webhook/script. Quirks: notification scripts. Docs: https://docs.opsview.com/
+- Checkmk — Possible: yes. Method: webhook/script. Quirks: notification scripts. Docs: https://docs.checkmk.com/latest/en/notifications.html
+- Cabot — Possible: yes. Method: webhook/script. Quirks: custom alerts. Docs: https://cabotapp.com/
+- Prometheus Pushgateway — Possible: yes. Method: script. Quirks: push metrics + alerting rules. Docs: https://github.com/prometheus/pushgateway

@@ -1,0 +1,45 @@
+# CI/CD and DevOps
+
+Method legend: webhook, script, polling, email, ci
+
+- GitHub Actions — Possible: yes. Method: ci step. Quirks: store tokens in secrets; avoid leaking in logs. Docs: https://docs.github.com/actions
+- GitLab CI — Possible: yes. Method: ci step. Quirks: use CI/CD variables; keep curl in after_script if needed. Docs: https://docs.gitlab.com/ee/ci/
+- Jenkins — Possible: yes. Method: script/post-build. Quirks: use post-build step; mask credentials. Docs: https://www.jenkins.io/doc/
+- CircleCI — Possible: yes. Method: ci step. Quirks: run curl in job. Docs: https://circleci.com/docs/
+- Travis CI — Possible: yes. Method: ci step. Quirks: use after_success/after_failure. Docs: https://docs.travis-ci.com/
+- Buildkite — Possible: yes. Method: ci step. Quirks: pipeline hooks. Docs: https://buildkite.com/docs/pipelines
+- Azure DevOps Pipelines — Possible: yes. Method: ci step. Quirks: use script task; secrets via variables. Docs: https://learn.microsoft.com/azure/devops/pipelines/
+- Bitbucket Pipelines — Possible: yes. Method: ci step. Quirks: run curl in step. Docs: https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/
+- Drone CI — Possible: yes. Method: ci step. Quirks: use plugin/script. Docs: https://docs.drone.io/
+- TeamCity — Possible: yes. Method: script step. Quirks: add command line. Docs: https://www.jetbrains.com/help/teamcity/
+- Bamboo — Possible: yes. Method: script step. Quirks: add script task. Docs: https://confluence.atlassian.com/bamboo/
+- GoCD — Possible: yes. Method: script. Quirks: use task hooks. Docs: https://docs.gocd.org/
+- Spinnaker — Possible: yes. Method: webhook. Quirks: use pipeline notifications. Docs: https://spinnaker.io/docs/
+- Argo CD — Possible: yes. Method: webhook. Quirks: notifications controller. Docs: https://argocd-notifications.readthedocs.io/
+- Argo Workflows — Possible: yes. Method: webhook/script. Quirks: onExit hooks. Docs: https://argoproj.github.io/argo-workflows/
+- Flux CD — Possible: yes. Method: webhook. Quirks: notifications controller. Docs: https://fluxcd.io/docs/components/notification/
+- Tekton — Possible: yes. Method: script. Quirks: task steps. Docs: https://tekton.dev/docs/
+- Harness — Possible: yes. Method: webhook. Quirks: notification rules. Docs: https://developer.harness.io/docs/
+- Octopus Deploy — Possible: yes. Method: webhook. Quirks: subscriptions. Docs: https://octopus.com/docs
+- GitHub Deployments — Possible: yes. Method: webhook. Quirks: use deployment status events. Docs: https://docs.github.com/developers/webhooks-and-events/webhooks/webhook-events-and-payloads
+- Renovate — Possible: yes. Method: webhook. Quirks: use platform webhooks. Docs: https://docs.renovatebot.com/
+- Dependabot — Possible: yes. Method: webhook. Quirks: GitHub webhooks. Docs: https://docs.github.com/code-security/dependabot
+- Snyk — Possible: yes. Method: webhook. Quirks: integration webhooks. Docs: https://docs.snyk.io/
+- SonarQube — Possible: yes. Method: webhook. Quirks: configure in admin. Docs: https://docs.sonarqube.org/latest/project-administration/webhooks/
+- Terraform Cloud — Possible: yes. Method: webhook. Quirks: run notifications. Docs: https://developer.hashicorp.com/terraform/cloud-docs/notifications
+- Terraform Enterprise — Possible: yes. Method: webhook. Quirks: same as Cloud. Docs: https://developer.hashicorp.com/terraform/enterprise
+- Nexus Repository — Possible: yes. Method: webhook/script. Quirks: use webhooks or audit logs. Docs: https://help.sonatype.com/repomanager3
+- Artifactory — Possible: yes. Method: webhook. Quirks: webhook add-on. Docs: https://www.jfrog.com/confluence/display/JFROG/Webhooks
+- Harbor — Possible: yes. Method: webhook. Quirks: configure registry webhooks. Docs: https://goharbor.io/docs/
+- Docker Hub — Possible: yes. Method: webhook. Quirks: webhook per repo. Docs: https://docs.docker.com/docker-hub/webhooks/
+- GitHub Container Registry — Possible: yes. Method: webhook. Quirks: use GitHub events. Docs: https://docs.github.com/packages
+- AWS CodeBuild — Possible: yes. Method: webhook/script. Quirks: buildspec hooks. Docs: https://docs.aws.amazon.com/codebuild/
+- AWS CodePipeline — Possible: yes. Method: webhook via EventBridge. Quirks: event rules. Docs: https://docs.aws.amazon.com/codepipeline/
+- GCP Cloud Build — Possible: yes. Method: script. Quirks: build steps. Docs: https://cloud.google.com/build/docs
+- Azure DevOps Repos — Possible: yes. Method: webhook. Quirks: use service hooks. Docs: https://learn.microsoft.com/azure/devops/service-hooks/
+- GitHub Actions (Enterprise) — Possible: yes. Method: ci step. Quirks: same as GitHub Actions. Docs: https://docs.github.com/enterprise-cloud@latest/actions
+- Bitrise — Possible: yes. Method: ci step. Quirks: add script step. Docs: https://devcenter.bitrise.io/
+- Codefresh — Possible: yes. Method: webhook/script. Quirks: pipeline steps. Docs: https://codefresh.io/docs/
+- Buddy — Possible: yes. Method: ci step. Quirks: use action scripts. Docs: https://buddy.works/docs
+- Semaphore CI — Possible: yes. Method: ci step. Quirks: use after_pipeline task. Docs: https://docs.semaphoreci.com/
+- GitHub Actions (Self-hosted) — Possible: yes. Method: ci step. Quirks: ensure runner has curl. Docs: https://docs.github.com/actions/hosting-your-own-runners

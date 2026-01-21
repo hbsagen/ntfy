@@ -1,0 +1,43 @@
+# Infrastructure and homelab
+
+Method legend: webhook, script, polling, email, ci
+
+- Proxmox VE — Possible: yes. Method: script/hook. Quirks: hook scripts for backup/VM events; email-only by default. Docs: https://pve.proxmox.com/pve-docs/
+- VMware vCenter/ESXi — Possible: yes. Method: script/polling. Quirks: use alarm actions or vRO. Docs: https://docs.vmware.com/
+- TrueNAS — Possible: yes. Method: webhook. Quirks: alert services support webhooks; use HTTPS. Docs: https://www.truenas.com/docs/
+- Synology DSM — Possible: yes. Method: email/script. Quirks: email only by default. Docs: https://kb.synology.com/
+- QNAP QTS — Possible: yes. Method: email/script. Quirks: email only by default. Docs: https://docs.qnap.com/
+- Unraid — Possible: yes. Method: script. Quirks: user scripts/plugin. Docs: https://docs.unraid.net/
+- OpenWrt — Possible: yes. Method: script. Quirks: limited packages. Docs: https://openwrt.org/docs
+- pfSense — Possible: yes. Method: email/script. Quirks: email only by default. Docs: https://docs.netgate.com/pfsense/
+- OPNsense — Possible: yes. Method: email/script. Quirks: use API or scripts. Docs: https://docs.opnsense.org/
+- Pi-hole — Possible: yes. Method: script. Quirks: API or FTL log. Docs: https://docs.pi-hole.net/
+- AdGuard Home — Possible: yes. Method: script/webhook. Quirks: API or log tail. Docs: https://github.com/AdguardTeam/AdGuardHome/wiki
+- Home Assistant — Possible: yes. Method: webhook. Quirks: use REST command in automation. Docs: https://www.home-assistant.io/docs/automation/
+- Node-RED — Possible: yes. Method: webhook. Quirks: HTTP request node. Docs: https://nodered.org/docs/
+- Homebridge — Possible: yes. Method: script/polling. Quirks: plugin hooks. Docs: https://github.com/homebridge/homebridge/wiki
+- Zigbee2MQTT — Possible: yes. Method: script. Quirks: MQTT + script bridge. Docs: https://www.zigbee2mqtt.io/
+- Mosquitto — Possible: yes. Method: script. Quirks: MQTT bridge. Docs: https://mosquitto.org/man/
+- Frigate NVR — Possible: yes. Method: webhook. Quirks: event webhooks. Docs: https://docs.frigate.video/
+- Blue Iris — Possible: yes. Method: script/webhook. Quirks: alert scripts. Docs: https://blueirissoftware.com/
+- Shinobi — Possible: yes. Method: webhook. Quirks: event webhooks. Docs: https://docs.shinobi.video/
+- ZoneMinder — Possible: yes. Method: script. Quirks: event filters. Docs: https://zoneminder.readthedocs.io/
+- Docker — Possible: yes. Method: script/healthcheck. Quirks: docker events require daemon access; use a small relay service. Docs: https://docs.docker.com/engine/reference/commandline/events/
+- Kubernetes — Possible: yes. Method: webhook/script. Quirks: use Alertmanager or event exporter; cluster RBAC required. Docs: https://kubernetes.io/docs/
+- K3s — Possible: yes. Method: webhook/script. Quirks: same as Kubernetes. Docs: https://docs.k3s.io/
+- Nomad — Possible: yes. Method: polling/script. Quirks: event stream API. Docs: https://developer.hashicorp.com/nomad/docs
+- Consul — Possible: yes. Method: script. Quirks: use watches. Docs: https://developer.hashicorp.com/consul/docs
+- Vault — Possible: yes. Method: script/webhook. Quirks: audit logs + script. Docs: https://developer.hashicorp.com/vault/docs
+- Ansible — Possible: yes. Method: script. Quirks: callback plugin. Docs: https://docs.ansible.com/
+- SaltStack — Possible: yes. Method: script. Quirks: reactor system. Docs: https://docs.saltproject.io/
+- Puppet — Possible: yes. Method: script. Quirks: report processor. Docs: https://puppet.com/docs/
+- Chef — Possible: yes. Method: script. Quirks: handler. Docs: https://docs.chef.io/handlers/
+- Terraform — Possible: yes. Method: script. Quirks: wrap apply with notifier. Docs: https://developer.hashicorp.com/terraform/docs
+- Packer — Possible: yes. Method: script. Quirks: post-processor. Docs: https://developer.hashicorp.com/packer/docs
+- Proxmox Backup Server — Possible: yes. Method: script/email. Quirks: email notifications by default. Docs: https://pbs.proxmox.com/docs/
+- Ceph — Possible: yes. Method: script. Quirks: use manager modules or log tail. Docs: https://docs.ceph.com/
+- GlusterFS — Possible: yes. Method: script. Quirks: log tail or monitoring. Docs: https://docs.gluster.org/
+- OpenStack — Possible: yes. Method: webhook/script. Quirks: use telemetry or webhook notifications. Docs: https://docs.openstack.org/
+- Rancher — Possible: yes. Method: webhook. Quirks: notifications via webhooks. Docs: https://rancher.com/docs/
+- Portainer — Possible: yes. Method: webhook/script. Quirks: limited webhooks; use API polling. Docs: https://docs.portainer.io/
+- LXD — Possible: yes. Method: script. Quirks: use event API. Docs: https://linuxcontainers.org/lxd/docs/master/

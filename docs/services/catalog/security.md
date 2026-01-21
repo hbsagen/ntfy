@@ -1,0 +1,43 @@
+# Security and SIEM
+
+Method legend: webhook, script, polling, email, ci
+
+- Wazuh — Possible: yes. Method: script/integration. Quirks: integration runs on manager; ensure executable + correct JSON fields. Docs: https://documentation.wazuh.com/
+- Splunk (SIEM) — Possible: yes. Method: webhook or script. Quirks: use webhook alert actions; payload is fixed unless scripted. Docs: https://docs.splunk.com/Documentation/Splunk/latest/Alert/Webhooks
+- Elastic Security — Possible: yes. Method: webhook. Quirks: uses connectors. Docs: https://www.elastic.co/guide/en/kibana/current/alerting.html
+- Graylog — Possible: yes. Method: webhook. Quirks: JSON template. Docs: https://docs.graylog.org/
+- Microsoft Sentinel — Possible: yes. Method: webhook via Logic Apps. Quirks: use playbooks; expect JSON schema and auth. Docs: https://learn.microsoft.com/azure/sentinel/
+- IBM QRadar — Possible: yes. Method: script/email. Quirks: custom action or email bridge. Docs: https://www.ibm.com/docs/en/qsip
+- AlienVault OSSIM — Possible: yes. Method: script/email. Quirks: action plugins. Docs: https://cybersecurity.att.com/documentation/
+- CrowdStrike Falcon — Possible: yes. Method: webhook. Quirks: use event stream or notifications; set up an intermediary to POST to ntfy. Docs: https://falcon.crowdstrike.com/support/documentation
+- Sophos Central — Possible: yes. Method: webhook. Quirks: webhook integration. Docs: https://docs.sophos.com/central/customer/help/
+- OSSEC — Possible: yes. Method: script. Quirks: active response. Docs: https://www.ossec.net/docs/
+- Suricata — Possible: yes. Method: script/log tail. Quirks: parse eve.json. Docs: https://suricata.readthedocs.io/
+- Snort — Possible: yes. Method: script/log tail. Quirks: parse alert logs. Docs: https://www.snort.org/documents
+- Falco — Possible: yes. Method: webhook/script. Quirks: use outputs. Docs: https://falco.org/docs/
+- OpenCTI — Possible: yes. Method: webhook. Quirks: connectors/webhooks. Docs: https://docs.opencti.io/
+- TheHive — Possible: yes. Method: webhook. Quirks: webhooks or custom actions. Docs: https://docs.thehive-project.org/
+- Cortex — Possible: yes. Method: webhook. Quirks: analyzer hooks. Docs: https://docs.thehive-project.org/cortex/
+- MISP — Possible: yes. Method: webhook/script. Quirks: event actions. Docs: https://www.misp-project.org/documentation/
+- Microsoft Defender for Endpoint — Possible: yes. Method: webhook. Quirks: use Event Streaming or API. Docs: https://learn.microsoft.com/microsoft-365/security/defender-endpoint/
+- Microsoft Defender for Cloud — Possible: yes. Method: webhook. Quirks: use workflow automation. Docs: https://learn.microsoft.com/azure/defender-for-cloud/
+- AWS GuardDuty — Possible: yes. Method: webhook via EventBridge/Lambda. Quirks: requires event target. Docs: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_exportfindings.html
+- AWS Security Hub — Possible: yes. Method: webhook via EventBridge. Quirks: needs target. Docs: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integrations.html
+- AWS Macie — Possible: yes. Method: webhook via EventBridge. Quirks: use event rules. Docs: https://docs.aws.amazon.com/macie/latest/user/macie-using-eventbridge.html
+- GCP Security Command Center — Possible: yes. Method: webhook via Pub/Sub. Quirks: push subscription. Docs: https://cloud.google.com/security-command-center/docs/how-to-notifications
+- Palo Alto Cortex XDR — Possible: yes. Method: webhook. Quirks: alert notifications. Docs: https://docs.paloaltonetworks.com/
+- Rapid7 InsightIDR — Possible: yes. Method: webhook. Quirks: use alert integrations. Docs: https://docs.rapid7.com/
+- Qualys — Possible: yes. Method: email/script. Quirks: use scheduled reports; email bridge. Docs: https://www.qualys.com/documentation/
+- Tenable — Possible: yes. Method: webhook/email. Quirks: use integrations or email. Docs: https://docs.tenable.com/
+- Snyk Security — Possible: yes. Method: webhook. Quirks: use integration webhooks. Docs: https://docs.snyk.io/
+- GitHub Code Scanning — Possible: yes. Method: webhook. Quirks: use GitHub webhooks. Docs: https://docs.github.com/code-security
+- OpenVAS/Greenbone — Possible: yes. Method: script/email. Quirks: report notifications. Docs: https://greenbone.github.io/docs/
+- Zeek — Possible: yes. Method: script/log tail. Quirks: parse logs. Docs: https://docs.zeek.org/
+- WAF (AWS WAF) — Possible: yes. Method: webhook via CloudWatch/SNS. Quirks: needs bridge. Docs: https://docs.aws.amazon.com/waf/
+- SentinelOne — Possible: yes. Method: webhook. Quirks: use alert notifications or API polling. Docs: https://www.sentinelone.com/platform/api/
+- Palo Alto Cortex XSOAR — Possible: yes. Method: webhook/script. Quirks: use playbooks. Docs: https://docs.paloaltonetworks.com/cortex/cortex-xsoar
+- Lacework — Possible: yes. Method: webhook. Quirks: use alert channels. Docs: https://docs.lacework.com/
+- Wiz — Possible: yes. Method: webhook. Quirks: use integrations/webhooks. Docs: https://docs.wiz.io/
+- Prisma Cloud — Possible: yes. Method: webhook. Quirks: alert integrations. Docs: https://docs.paloaltonetworks.com/prisma/prisma-cloud
+- Guardicore Centra — Possible: yes. Method: webhook/script. Quirks: alert notifications. Docs: https://www.akamai.com/products/guardicore-segmentation
+- OSQuery — Possible: yes. Method: script. Quirks: use log output + parser. Docs: https://osquery.readthedocs.io/
