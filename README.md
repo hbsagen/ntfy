@@ -22,6 +22,7 @@ This repo runs a nightly GitHub-issues workflow via n8n to keep reports and simp
 What it does nightly:
 - Pulls open GitHub issues for this repo
 - Writes a dated report to `docs/issue-triage/YYYY-MM-DD.md`
+- Runs `scripts/autofix.js` to repair missing/broken catalog items and normalize links
 - Runs `scripts/verify.sh` to validate basic repo structure
 - If verification passes, commits directly to `main`
 
