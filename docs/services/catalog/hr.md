@@ -12,6 +12,6 @@ Method legend: webhook, script, polling, email, ci
 - JumpCloud — Possible: yes. Method: webhook. Quirks: use event webhooks. Docs: https://jumpcloud.com/support
 - Rippling — Possible: yes. Method: webhook/script. Quirks: limited docs; use API + polling. Docs: https://developers.rippling.com/
 - Greenhouse — Possible: yes. Method: webhook. Quirks: use webhooks for candidates/jobs. Docs: https://developers.greenhouse.io/webhooks.html
-- Lever — Possible: yes. Method: webhook. Quirks: webhooks per event type. Docs: https://help.lever.co/hc/en-us/articles/205697315-Webhooks
+- Lever — Possible: yes. Method: webhook. Quirks: webhooks per event type. Docs: https://help.lever.co/
 - Workable — Possible: yes. Method: webhook. Quirks: webhook configuration in admin. Docs: https://workable.readthedocs.io/
 - Personio — Possible: yes. Method: webhook. Quirks: use webhooks or API polling. Docs: https://developer.personio.de/docs/webhooks

@@ -12,7 +12,7 @@ Method legend: webhook, script, polling, email, ci
 - Kentik — Possible: yes. Method: webhook. Quirks: alert notifications. Docs: https://docs.kentik.com/
 - NetBox — Possible: yes. Method: webhook. Quirks: webhook configuration. Docs: https://docs.netbox.dev/en/stable/configuration/webhooks/
 - LibreNMS — Possible: yes. Method: webhook. Quirks: alert transports. Docs: https://docs.librenms.org/Alerting/Transports/
-- Observium — Possible: yes. Method: script/email. Quirks: alerting transport. Docs: https://docs.observium.org/alerts/
+- Observium — Possible: yes. Method: script/email. Quirks: alerting transport. Docs: https://docs.observium.org/
 - Cisco Meraki — Possible: yes. Method: webhook. Quirks: alert webhooks; validate shared secret. Docs: https://developer.cisco.com/meraki/webhooks/
 - Cisco DNA Center — Possible: yes. Method: webhook. Quirks: event subscriptions. Docs: https://developer.cisco.com/docs/dna-center/
 - Fortinet FortiGate — Possible: yes. Method: script/email. Quirks: email alerts; use bridge. Docs: https://docs.fortinet.com/

@@ -4,7 +4,7 @@ Method legend: webhook, script, polling, email, ci
 
 - Wazuh — Possible: yes. Method: script/integration. Quirks: integration runs on manager; ensure executable + correct JSON fields. Docs: https://documentation.wazuh.com/
 - Splunk (SIEM) — Possible: yes. Method: webhook or script. Quirks: use webhook alert actions; payload is fixed unless scripted. Docs: https://docs.splunk.com/Documentation/Splunk/latest/Alert/Webhooks
-- Elastic Security — Possible: yes. Method: webhook. Quirks: uses connectors. Docs: https://www.elastic.co/guide/en/kibana/current/alerting.html
+- Elastic Security — Possible: yes. Method: webhook. Quirks: uses connectors. Docs: https://www.elastic.co/
 - Graylog — Possible: yes. Method: webhook. Quirks: JSON template. Docs: https://docs.graylog.org/
 - Microsoft Sentinel — Possible: yes. Method: webhook via Logic Apps. Quirks: use playbooks; expect JSON schema and auth. Docs: https://learn.microsoft.com/azure/sentinel/
 - IBM QRadar — Possible: yes. Method: script/email. Quirks: custom action or email bridge. Docs: https://www.ibm.com/docs/en/qsip
@@ -34,7 +34,7 @@ Method legend: webhook, script, polling, email, ci
 - OpenVAS/Greenbone — Possible: yes. Method: script/email. Quirks: report notifications. Docs: https://greenbone.github.io/docs/
 - Zeek — Possible: yes. Method: script/log tail. Quirks: parse logs. Docs: https://docs.zeek.org/
 - WAF (AWS WAF) — Possible: yes. Method: webhook via CloudWatch/SNS. Quirks: needs bridge. Docs: https://docs.aws.amazon.com/waf/
-- SentinelOne — Possible: yes. Method: webhook. Quirks: use alert notifications or API polling. Docs: https://www.sentinelone.com/platform/api/
+- SentinelOne — Possible: yes. Method: webhook. Quirks: use alert notifications or API polling. Docs: https://www.sentinelone.com/
 - Palo Alto Cortex XSOAR — Possible: yes. Method: webhook/script. Quirks: use playbooks. Docs: https://docs.paloaltonetworks.com/cortex/cortex-xsoar
 - Lacework — Possible: yes. Method: webhook. Quirks: use alert channels. Docs: https://docs.lacework.com/
 - Wiz — Possible: yes. Method: webhook. Quirks: use integrations/webhooks. Docs: https://docs.wiz.io/

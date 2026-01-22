@@ -11,10 +11,10 @@ Method legend: webhook, script, polling, email, ci
 - Square — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://developer.squareup.com/docs/webhooks/overview
 - Braintree — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://developer.paypal.com/braintree/docs/guides/webhooks/overview
 - Adyen — Possible: yes. Method: webhook. Quirks: HMAC verification. Docs: https://docs.adyen.com/development-resources/webhooks
-- Checkout.com — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://www.checkout.com/docs/getting-started/webhooks
-- Paddle — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://developer.paddle.com/webhooks
+- Checkout.com — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://www.checkout.com/
+- Paddle — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://developer.paddle.com/
 - Lemon Squeezy — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://docs.lemonsqueezy.com/help/webhooks
-- Chargebee — Possible: yes. Method: webhook. Quirks: event notifications. Docs: https://www.chargebee.com/docs/2.0/webhooks.html
+- Chargebee — Possible: yes. Method: webhook. Quirks: event notifications. Docs: https://www.chargebee.com/
 - Recurly — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://developers.recurly.com/docs/webhooks
 - Paystack — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://paystack.com/docs/payments/webhooks/
 - Razorpay — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://razorpay.com/docs/webhooks/
@@ -23,4 +23,4 @@ Method legend: webhook, script, polling, email, ci
 - Klarna — Possible: yes. Method: webhook. Quirks: HMAC verification. Docs: https://developers.klarna.com/api/#webhooks
 - Worldpay — Possible: yes. Method: webhook. Quirks: event notifications. Docs: https://developer.worldpay.com/
 - Coinbase Commerce — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://commerce.coinbase.com/docs/api/#webhooks
-- BitPay — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://bitpay.com/docs/invoice-callback
+- BitPay — Possible: yes. Method: webhook. Quirks: signature verification. Docs: https://bitpay.com/

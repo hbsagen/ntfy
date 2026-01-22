@@ -9,7 +9,7 @@ Method legend: webhook, script, polling, email, ci
 - QNAP QTS — Possible: yes. Method: email/script. Quirks: email only by default. Docs: https://docs.qnap.com/
 - Unraid — Possible: yes. Method: script. Quirks: user scripts/plugin. Docs: https://docs.unraid.net/
 - OpenWrt — Possible: yes. Method: script. Quirks: limited packages. Docs: https://openwrt.org/docs
-- pfSense — Possible: yes. Method: email/script. Quirks: email only by default. Docs: https://docs.netgate.com/pfsense/
+- pfSense — Possible: yes. Method: email/script. Quirks: email only by default. Docs: https://docs.netgate.com/
 - OPNsense — Possible: yes. Method: email/script. Quirks: use API or scripts. Docs: https://docs.opnsense.org/
 - Pi-hole — Possible: yes. Method: script. Quirks: API or FTL log. Docs: https://docs.pi-hole.net/
 - AdGuard Home — Possible: yes. Method: script/webhook. Quirks: API or log tail. Docs: https://github.com/AdguardTeam/AdGuardHome/wiki

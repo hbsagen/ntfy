@@ -3,7 +3,7 @@
 Method legend: webhook, script, polling, email, ci
 
 - Zapier — Possible: yes. Method: webhook. Quirks: Webhooks by Zapier. Docs: https://zapier.com/help/create/code-webhooks/webhooks
-- Make (Integromat) — Possible: yes. Method: webhook. Quirks: HTTP module. Docs: https://www.make.com/en/help
+- Make (Integromat) — Possible: yes. Method: webhook. Quirks: HTTP module. Docs: https://www.make.com/
 - IFTTT — Possible: yes. Method: webhook. Quirks: Webhooks service. Docs: https://ifttt.com/maker_webhooks
 - n8n — Possible: yes. Method: webhook/http node. Quirks: HTTP Request node. Docs: https://docs.n8n.io/
 - Pipedream — Possible: yes. Method: webhook/script. Quirks: HTTP or node step. Docs: https://pipedream.com/docs/
@@ -16,7 +16,7 @@ Method legend: webhook, script, polling, email, ci
 - GitHub Actions (automation) — Possible: yes. Method: ci. Quirks: use curl step. Docs: https://docs.github.com/actions
 - Google Apps Script — Possible: yes. Method: script. Quirks: UrlFetchApp. Docs: https://developers.google.com/apps-script
 - Microsoft Power Automate — Possible: yes. Method: webhook. Quirks: use HTTP action. Docs: https://learn.microsoft.com/power-automate/
-- Airtable Automations — Possible: yes. Method: webhook. Quirks: scripting action. Docs: https://support.airtable.com/docs/automation-overview
+- Airtable Automations — Possible: yes. Method: webhook. Quirks: scripting action. Docs: https://support.airtable.com/
 - Notion (via automation) — Possible: yes. Method: polling/script. Quirks: no outbound webhooks; use API polling. Docs: https://developers.notion.com/
 - Trello Butler — Possible: yes. Method: webhook. Quirks: automation rules. Docs: https://developer.atlassian.com/cloud/trello/guides/rest-api/webhooks/
 - Asana Rules — Possible: yes. Method: webhook. Quirks: use API + rules. Docs: https://developers.asana.com/docs/webhooks

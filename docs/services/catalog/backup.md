@@ -11,8 +11,8 @@ Method legend: webhook, script, polling, email, ci
 - Bacula — Possible: yes. Method: script. Quirks: job hooks. Docs: https://www.bacula.org/
 - Bareos — Possible: yes. Method: script. Quirks: job hooks. Docs: https://docs.bareos.org/
 - UrBackup — Possible: yes. Method: email/script. Quirks: email only by default. Docs: https://www.urbackup.org/
-- Syncthing — Possible: yes. Method: webhook. Quirks: events API. Docs: https://docs.syncthing.net/events.html
-- rsync — Possible: yes. Method: script. Quirks: wrap command with notifier. Docs: https://download.samba.org/pub/rsync/rsync.html
+- Syncthing — Possible: yes. Method: webhook. Quirks: events API. Docs: https://docs.syncthing.net/
+- rsync — Possible: yes. Method: script. Quirks: wrap command with notifier. Docs: https://download.samba.org/
 - ZFS snapshots — Possible: yes. Method: script. Quirks: use zfs events/hooks. Docs: https://openzfs.github.io/
 - Cron (Linux/macOS) — Possible: yes. Method: script. Quirks: environment limited. Docs: https://man7.org/linux/man-pages/man5/crontab.5.html
 - systemd timers — Possible: yes. Method: script. Quirks: use OnFailure. Docs: https://www.freedesktop.org/software/systemd/man/systemd.timer.html

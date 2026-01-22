@@ -26,7 +26,7 @@ Method legend: webhook, script, polling, email, ci
 - Dependabot — Possible: yes. Method: webhook. Quirks: GitHub webhooks. Docs: https://docs.github.com/code-security/dependabot
 - Snyk — Possible: yes. Method: webhook. Quirks: integration webhooks. Docs: https://docs.snyk.io/
 - SonarQube — Possible: yes. Method: webhook. Quirks: configure in admin. Docs: https://docs.sonarqube.org/latest/project-administration/webhooks/
-- Terraform Cloud — Possible: yes. Method: webhook. Quirks: run notifications. Docs: https://developer.hashicorp.com/terraform/cloud-docs/notifications
+- Terraform Cloud — Possible: yes. Method: webhook. Quirks: run notifications. Docs: https://developer.hashicorp.com/
 - Terraform Enterprise — Possible: yes. Method: webhook. Quirks: same as Cloud. Docs: https://developer.hashicorp.com/terraform/enterprise
 - Nexus Repository — Possible: yes. Method: webhook/script. Quirks: use webhooks or audit logs. Docs: https://help.sonatype.com/repomanager3
 - Artifactory — Possible: yes. Method: webhook. Quirks: webhook add-on. Docs: https://www.jfrog.com/confluence/display/JFROG/Webhooks

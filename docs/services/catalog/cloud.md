@@ -27,8 +27,8 @@ Method legend: webhook, script, polling, email, ci
 - Tencent Cloud — Possible: yes. Method: webhook/email. Quirks: use alert notifications. Docs: https://www.tencentcloud.com/document/product
 - OVHcloud — Possible: yes. Method: webhook/email. Quirks: use monitoring notifications. Docs: https://docs.ovh.com/
 - Vultr — Possible: yes. Method: webhook/email. Quirks: use alerting. Docs: https://www.vultr.com/docs/
-- Heroku — Possible: yes. Method: webhook. Quirks: use app webhooks or log drains + script. Docs: https://devcenter.heroku.com/categories/webhooks
-- Vercel — Possible: yes. Method: webhook. Quirks: deploy webhooks. Docs: https://vercel.com/docs/integrations/webhooks
+- Heroku — Possible: yes. Method: webhook. Quirks: use app webhooks or log drains + script. Docs: https://devcenter.heroku.com/
+- Vercel — Possible: yes. Method: webhook. Quirks: deploy webhooks. Docs: https://vercel.com/
 - Netlify — Possible: yes. Method: webhook. Quirks: build hooks and deploy notifications. Docs: https://docs.netlify.com/site-deploys/notifications/
 - Render — Possible: yes. Method: webhook. Quirks: deploy hooks. Docs: https://render.com/docs/deploy-hooks
 - Fly.io — Possible: yes. Method: webhook/script. Quirks: use logs/events; limited webhooks. Docs: https://fly.io/docs/
